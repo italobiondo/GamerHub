@@ -1,19 +1,21 @@
 * {
   --primary-color: #f5f5f5;
   box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 1rem;
   box-sizing: border-box;
+  background-color: rgb(181, 207, 197);
 }
 
 .page {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 10rem;
 }
 
@@ -35,17 +37,32 @@ header a {
 }
 
 main {
-  height: 90vh;
   width: 100%;
+}
+
+.antpost {
+  padding: 4px 0 4px 0;
+  border-bottom: rgb(107, 126, 118) 1px solid;
 }
 
 .post {
   padding: 1rem;
-  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(181, 207, 197);
+}
+
+.antpost :hover {
+  background-color: rgb(131, 155, 146);
+  transition: 0.2s ease-in-out;
 }
 
 .buttons {
   padding: 0.4rem 0 0rem 0;
+}
+
+.buttons :hover {
+  background-color: rgb(85, 104, 97);
+  cursor: auto;
+  color: #fff;
 }
 
 .post-page {
@@ -66,11 +83,18 @@ main .post .buttons {
 .buttons-link {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  border: 1px solid #000;
+  border-radius: 999px;
+  padding: 0.4rem;
+}
+
+.buttons-link a {
+  border-radius: 999px;
 }
 
 .buttons-link span {
   font-size: 0.8rem;
+  margin-left: 0.4rem;
 }
 
 .menu-item {
